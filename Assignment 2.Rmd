@@ -1,0 +1,16 @@
+---
+title: "Week 2 Assignment"
+author: "Trevor"
+date: "7 November 2019"
+output: html_document
+---
+
+## R Markdown & Leaflet
+
+```{r map, warning=FALSE}
+library(leaflet)
+map <- leaflet() %>% addTiles()
+map <- map %>% addMarkers(lat = -33.839, lng = 151.2072, popup = "Home")
+map
+```
+
